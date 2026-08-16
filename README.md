@@ -9,8 +9,10 @@ Extract the downloaded archive.
 
 Move the uncompressed scraped_data and internal_data folders directly into the main project directory.
 
+<pre>
 main_project_folder/
 ├── scraped_data/                 # Downloaded external data (uncompressed from Google Drive)
 ├── internal_data/                # Downloaded internal data (uncompressed from Google Drive)
-├── models/                       # Auto-generated folder that holds the saved XGBoost model files[cite: 1]
-└── checkpoints/                  # Auto-generated folder that holds per-client checkpoint JSON files for incremental updates[cite: 1]
+├── models/                       # Auto-generated folder that holds the saved XGBoost model files
+└── checkpoints/                  # Auto-generated folder that holds per-client checkpoint JSON files
+</pre>
