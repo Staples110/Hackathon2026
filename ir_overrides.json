@@ -1,0 +1,170 @@
+{
+  "BHP": {
+    "company_name": "BHP Group Limited",
+    "website": "https://www.bhp.com",
+    "ir_urls": [],
+    "fiscal_year_end_month": 6
+  },
+  "BID": {
+    "company_name": "Bid Corporation Limited",
+    "website": "https://www.bidcorpgroup.com",
+    "ir_urls": [
+      "https://www.bidcorpgroup.com/investor-overview.php",
+      "https://www.bidcorpgroup.com/archive.php",
+      "https://www.bidcorpgroup.com/shareholder-hub.php"
+    ],
+    "fiscal_year_end_month": 6
+  },
+  "HY7A.F": {
+    "company_name": "Shoprite Holdings Ltd",
+    "website": "https://www.shopriteholdings.co.za",
+    "ir_urls": [
+      "https://www.shopriteholdings.co.za/shareholders-investors.html",
+      "https://www.shopriteholdings.co.za/shareholders-investors.html#results-tab",
+      "https://www.shopriteholdings.co.za/shareholders-investors.html#report"
+    ],
+    "fiscal_year_end_month": 6
+  },
+  "GFI": {
+    "company_name": "Gold Fields Limited",
+    "website": "https://www.goldfields.com",
+    "ir_urls": [
+      "https://www.goldfields.com/2025-annual-report-suite.php",
+      "https://www.goldfields.com/financial-reports.php",
+      "https://financialfilings.com/companies/gold-fields-ltd/"
+    ],
+    "fiscal_year_end_month": 12
+  },
+  "MTN": {
+    "company_name": "MTN Group Limited",
+    "website": "https://www.mtn.com",
+    "ir_urls": [
+      "https://mtn-investor.com/mtn-30-years/index.php",
+      "https://www.mtn.com",
+      "https://www.mtn.com/reports/?tablink=sustainable-report"
+    ],
+    "fiscal_year_end_month": 12
+  },
+  "S1VA.F": {
+    "company_name": "Pepkor Holdings Limited",
+    "website": "https://pepkor.co.za",
+    "ir_urls": [
+      "https://thevault.exchange/start-profile-steps/?groupkey=NjI4NQ==",
+      "https://pepkor.co.za/financial-services/",
+      "https://pepkor.co.za/latest-results/"
+    ],
+    "fiscal_year_end_month": 9
+  },
+  "VAL": {
+    "company_name": "Valterra Platinum Limited",
+    "website": "https://www.valterraplatinum.com",
+    "ir_urls": [
+      "https://www.valterraplatinum.com/investor-centre/company-results-reports-presentations/#reports",
+      "https://www.valterraplatinum.com/investor-centre/",
+      "https://www.valterraplatinum.com/mine-to-market/policies-and-reports/"
+    ],
+    "fiscal_year_end_month": 12
+  },
+  "AU": {
+    "company_name": "AngloGold Ashanti plc",
+    "website": "https://www.anglogoldashanti.com",
+    "ir_urls": [
+      "https://www.anglogoldashanti.com/investors/esg-transparency-hub/",
+      "https://www.aga-reports.com",
+      "https://www.anglogoldashanti.com/./sustainability/sustainability-reporting/"
+    ],
+    "fiscal_year_end_month": 12
+  },
+  "GLEN.L": {
+    "company_name": "Glencore plc",
+    "website": "https://www.glencore.com",
+    "ir_urls": [
+      "https://www.glencore.com/investors",
+      "https://www.glencore.com/investors/shareholder-centre",
+      "https://www.glencore.com/investors/shareholder-centre/corporate-calendar"
+    ],
+    "fiscal_year_end_month": 12
+  },
+  "NGL0.F": {
+    "company_name": "Anglo American plc",
+    "website": "https://www.angloamerican.com",
+    "ir_urls": [
+      "https://www.angloamerican.com/sustainability-strategy/reporting-data-and-policies",
+      "https://www.angloamerican.com/investors",
+      "https://www.angloamerican.com/investors/results-centre-and-presentations"
+    ],
+    "fiscal_year_end_month": 12
+  },
+  "5VD.F": {
+    "company_name": "Vodacom Group Limited",
+    "website": "https://www.vodacom.com",
+    "ir_urls": [
+      "https://www.vodacom.com/financial-services.php",
+      "https://www.vodacom.com/public-policy-reports.php",
+      "https://www.vodacom.com/reporting-centre.php"
+    ],
+    "fiscal_year_end_month": 3
+  },
+  "0P0001O5OS": {
+    "company_name": "Sanlam Anchor Global Equity B USD Acc",
+    "website": "",
+    "ir_urls": [],
+    "fiscal_year_end_month": 12
+  },
+  "NPN": {
+    "company_name": "Naspers Limited",
+    "website": "https://www.naspers.com",
+    "ir_urls": [
+      "https://www.naspers.com/~/media/Files/N/Naspers-Corp-V2/results-reports-and-events-archive/latest-results/fy-2026/fy2026-results-presentation.pdf",
+      "https://www.naspers.com/digital-horizon-report",
+      "https://www.naspers.com/investors"
+    ],
+    "fiscal_year_end_month": 3
+  },
+  "CLCGY": {
+    "company_name": "Clicks Group Limited",
+    "website": "https://www.clicksgroup.co.za",
+    "ir_urls": [
+      "https://www.clicksgroup.co.za/iar2025/download-reports/",
+      "https://www.clicksgroup.co.za/investors/",
+      "https://www.clicksgroup.co.za/investors/share-price-performance/"
+    ],
+    "fiscal_year_end_month": 8
+  },
+  "SHC": {
+    "company_name": "Shaftesbury Capital PLC",
+    "website": "https://www.shaftesburycapital.com",
+    "ir_urls": [],
+    "fiscal_year_end_month": 12
+  },
+  "PRX.AS": {
+    "company_name": "Prosus N.V.",
+    "website": "https://www.prosus.com",
+    "ir_urls": [
+      "https://www.prosus.com/investors",
+      "https://www.prosus.com/investors/investing-in-prosus/ceo-letters-to-shareholders",
+      "https://www.prosus.com/investors/investing-in-prosus/net-asset-value"
+    ],
+    "fiscal_year_end_month": 3
+  },
+  "RMQ0.F": {
+    "company_name": "OUTsurance Group Limited",
+    "website": "https://www.outsurance.co.za",
+    "ir_urls": [
+      "https://group.outsurance.co.za/results-and-reports/",
+      "https://group.outsurance.co.za/shareholders-information/",
+      "https://group.outsurance.co.za/"
+    ],
+    "fiscal_year_end_month": 6
+  },
+  "0A3.F": {
+    "company_name": "NEPI Rockcastle N.V.",
+    "website": "https://www.nepirockcastle.com",
+    "ir_urls": [
+      "https://nepirockcastle.com/wp-content/uploads/2026/03/NEPI_Rockcastle_Annual_Report_2025.pdf",
+      "https://nepirockcastle.com/wp-content/uploads/2026/02/Reviewed_Condensed_Consolidated_Financial_Results_H2_2025.pdf",
+      "https://www.nepirockcastle.com"
+    ],
+    "fiscal_year_end_month": 12
+  }
+}
