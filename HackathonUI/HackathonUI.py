@@ -7,22 +7,30 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Syn Bank Share of Wallet Engine", layout="wide")
 st.title("Syn Bank: Share of Wallet Intelligence")
 
-# DUMMY DATA PLACEHOLDERS
+
 # 1. Heatmap Data 
-products = ['Transactional', 'Trade Finance', 'Global Markets', 'Investment Banking']
-clients = ['Client A', 'Client B', 'Client C', 'Client D', 'Client E']
-gap_data = pd.DataFrame(np.random.randint(10, 100, size=(5, 4)), columns=products, index=clients) #Fake Data to be replaced with the real data 
+df = pd.read_excel("INSIGHTS.xlsx")
+df['entity_name'] = df['entity_name'].str.strip()
+products = df['top_opportunity_pillar'].unique().tolist()
+clients = df['entity_name'].unique().tolist()
+
+gap_data = df.pivot_table(
+    index='entity_name', 
+    columns='top_opportunity_pillar', 
+    values='wallet_gap_zar_m', 
+    fill_value=0 
+)
 
 # 2. AI Briefing Notes 
-ai_notes = { # load a JSON file or a column from the database where the stored the generated AI text outputs for each client
-    'Client A': "AI Briefing: Client A shows a high gap in Trade Finance. Recent JSE SENS announcements indicate expansion into East Africa. Recommend pitching cross-border SWIFT solutions.",
-    'Client B': "AI Briefing: High transactional volume observed, but low Global Markets engagement. Potential hedging opportunities identified in recent annual reports.",
-    'Client C': "AI Briefing: Competitor X currently holds the majority of the Investment Banking wallet. Recommend leveraging existing transactional relationship to pitch debt restructuring."
+ai_notes = { 
+    'MTN Group': "MTN Group (Telecoms): Syn Bank holds a solid 20% wallet share, but there is clear room for growth. Action: Pitch strategic Investment Banking solutions to capture the remaining 80%.",
+    'Vodacom Group': "Vodacom Group (Telecoms): This is a massive, largely untapped opportunity where Syn Bank currently holds near-zero share of a huge estimated wallet. Action: Aggressively target as a net-new acquisition for Investment Banking to disrupt competitors.",
+    'BHP Group': "BHP Group (Mining): Syn Bank has fully captured the identified Transactional Banking wallet, leaving no current gap in this pillar. Action: Focus on retention for this pillar while exploring cross-selling opportunities in new areas like Trade Finance or Global Markets."
 }
 
 # SIDEBAR NAVIGATION
 st.sidebar.header("Navigation")
-view_mode = st.sidebar.radio("Select View:", ["Overview", "Portfolio Summary", "Client Drill-Down"])
+view_mode = st.sidebar.radio("Select View:", ["Overview", "Portfolio Summary", "Client Drill-Down & AI Briefing notes"])
 
 
 # --- VIEW 1: Overview ---
@@ -33,22 +41,42 @@ if view_mode == "Overview":
         
         st.header("Portfolio Summary")
         
-
-         # High-level KPIs
-        col1, col2, col3 = st.columns(3)
-        col1.metric(label="Estimated Total Wallet (ZAR)", value="R 5.2B", delta="12% YoY Growth")
-        col2.metric(label="Syn Bank Captured Share", value="R 1.1B", delta="-2% vs Competitors", delta_color="inverse")
-        col3.metric(label="Total Addressable Gap", value="R 4.1B", delta="High Priority")
-        
         st.divider()
-        
+
+        # Loop through each client present in your dataframe
+        for index, row in df.iterrows():
+            
+            st.markdown(f"### 🏢 {row['entity_name']} <span style='font-size:14px; color:gray;'>({row['sector'].capitalize()})</span>", unsafe_allow_html=True)
+            
+            
+            c1, c2, c3 = st.columns(3)
+            
+            
+            est_wallet = f"R {row['Estimated Wallet Size']:,.2f}M"
+            captured = f"R {row['Amount_captured_by_synbank']:,.2f}"
+            gap = f"R {row['wallet_gap_zar_m']:,.2f}M"
+            
+            c1.metric(label="Estimated Wallet Size", value=est_wallet)
+            c2.metric(label="Captured by Syn Bank", value=captured)
+            c3.metric(label="Wallet Gap", value=gap)
+           
+
+           
+            client_chart_data = pd.DataFrame({
+                'Metric Type': ['Estimated Wallet', 'Captured Share'],
+                'ZAR (Millions)': [row['Estimated Wallet Size'], row['Amount_captured_by_synbank']]
+            }).set_index('Metric Type')
+            
+            
+            st.bar_chart(client_chart_data)
+
+            st.divider()
         # Opportunity Heatmap
         st.subheader("Opportunity Heatmap (ZAR Millions)")
         st.write("Visualizing the revenue gap across clients and product pillars.")
-        # Uses Pandas built-in styling for a quick, interactive heatmap
         st.dataframe(gap_data.style.background_gradient(cmap='YlOrRd'), use_container_width=True)
 
-        # VISUAL DIVIDER
+        
 
 
     if view_mode == "Overview":
@@ -58,7 +86,7 @@ if view_mode == "Overview":
     st.subheader("3D Revenue Gap Surface")
     st.write("Interactive 3D topology of the opportunity landscape.")
 
-    # Create the Plotly figure
+    #Plotly figures
     fig = go.Figure(data=[go.Surface(
         z=gap_data.values,        # The Z-axis heights (the random integers)
         x=gap_data.columns,       # The X-axis labels (Products)
@@ -66,7 +94,7 @@ if view_mode == "Overview":
         colorscale='YlOrRd'       # Matching your current heatmap colors
     )])
 
-    # Tweak the layout for a better dashboard fit
+    
     fig.update_layout(
         title='Share of Wallet Topography',
         autosize=True,
@@ -75,33 +103,48 @@ if view_mode == "Overview":
         margin=dict(l=0, r=0, b=0, t=40)
     )
 
-    # Render the interactive plot in Streamlit
+    
     st.plotly_chart(fig, use_container_width=True)
 
     st.divider()
 
      # SECTION 2 OF OVERVIEW: CLIENT DRILL-DOWN 
 
-    if view_mode in ["Overview", "Client Drill-Down"]:
+    if view_mode in ["Overview", "Client Drill-Down & AI Briefing notes"]:
         
         st.header("Client Drill-Down")
         st.write("Client selector and AI notes")
 
      # Client Selection
-        selected_client = st.sidebar.selectbox("Select a Client:", list(ai_notes.keys()) + ['Client D', 'Client E'])
-        
-        st.subheader(f"Metrics for {selected_client}")
+    
+    selected_client = st.sidebar.selectbox("Select a Client:", clients)
+
+    st.subheader(f"Metrics for {selected_client}")
+
+    
+    client_data = df[df['entity_name'] == selected_client]
+
+    if not client_data.empty:
+        # Extract the first matching row
+        client_row = client_data.iloc[0]
         
         # Client Specific KPIs
         c1, c2 = st.columns(2)
-        c1.metric(label="Estimated Client Wallet", value="R 450M")
-        c2.metric(label="Syn Bank Current Share", value="15%")
+        
+        
+        est_wallet = f"R {client_row['Estimated Wallet Size']:,.2f}M"
+        wallet_share = f"{client_row['WALLET SHARE'] * 100:.1f}%"
+        
+        c1.metric(label="Estimated Client Wallet", value=est_wallet)
+        c2.metric(label="Syn Bank Current Share", value=wallet_share)
+    else:
+        st.warning("No financial data found for this client.")
         
         # Bar chart placeholder for product breakdown
         chart_data = pd.DataFrame(
-            np.random.randint(10, 50, size=(4, 2)), 
-            columns=['Syn Bank Share', 'Competitor Share'], 
-            index=products
+        np.random.randint(10, 50, size=(len(products), 2)), 
+        columns=['Syn Bank Share', 'Competitor Share'], 
+        index=products
         )
         st.bar_chart(chart_data)
         
@@ -133,11 +176,29 @@ elif view_mode == "Portfolio Summary":
     col3.metric(label="Total Addressable Gap", value="R 4.1B", delta="High Priority")
     
     st.divider()
+
+  
+    for index, row in df.iterrows():
+        
+        st.markdown(f"### 🏢 {row['entity_name']} <span style='font-size:14px; color:gray;'>({row['sector'].capitalize()})</span>", unsafe_allow_html=True)
+            
+        
+        c1, c2, c3 = st.columns(3)
+            
+        
+        est_wallet = f"R {row['Estimated Wallet Size']:,.2f}M"
+        captured = f"R {row['Amount_captured_by_synbank']:,.2f}"
+        gap = f"R {row['wallet_gap_zar_m']:,.2f}M"
+            
+        c1.metric(label="Estimated Wallet Size", value=est_wallet)
+        c2.metric(label="Captured by Syn Bank", value=captured)
+        c3.metric(label="Wallet Gap", value=gap)
+            
+        st.divider()
     
     # Opportunity Heatmap
     st.subheader("Opportunity Heatmap (ZAR Millions)")
     st.write("Visualizing the revenue gap across clients and product pillars.")
-    # Uses Pandas built-in styling for a quick, interactive heatmap
     st.dataframe(gap_data.style.background_gradient(cmap='YlOrRd'), use_container_width=True)
 
     st.divider()
@@ -146,7 +207,7 @@ elif view_mode == "Portfolio Summary":
     st.subheader("3D Revenue Gap Surface")
     st.write("Interactive 3D topology of the opportunity landscape.")
 
-    # Create the Plotly figure
+    #Plotly figure
     fig = go.Figure(data=[go.Surface(
         z=gap_data.values,        # The Z-axis heights (the random integers)
         x=gap_data.columns,       # The X-axis labels (Products)
@@ -154,7 +215,7 @@ elif view_mode == "Portfolio Summary":
         colorscale='YlOrRd'       # Matching your current heatmap colors
     )])
 
-    # Tweak the layout for a better dashboard fit
+    
     fig.update_layout(
         title='Share of Wallet Topography',
         autosize=True,
@@ -163,7 +224,7 @@ elif view_mode == "Portfolio Summary":
         margin=dict(l=0, r=0, b=0, t=40)
     )
 
-    # Render the interactive plot in Streamlit
+    
     st.plotly_chart(fig, use_container_width=True)
 
 
@@ -175,22 +236,36 @@ elif view_mode == "Portfolio Summary":
 
 
 
-elif view_mode == "Client Drill-Down":
-    st.header("Client Drill-Down")
+elif view_mode == "Client Drill-Down & AI Briefing notes":
+    st.header("Client Drill-Down & AI Briefing notes")
     
     # Client Selection
-    selected_client = st.sidebar.selectbox("Select a Client:", list(ai_notes.keys()) + ['Client D', 'Client E'])
-    
+    selected_client = st.sidebar.selectbox("Select a Client:", clients)
+
     st.subheader(f"Metrics for {selected_client}")
-    
-    # Client Specific KPIs
-    c1, c2 = st.columns(2)
-    c1.metric(label="Estimated Client Wallet", value="R 450M")
-    c2.metric(label="Syn Bank Current Share", value="15%")
+
+    # Filter the dataframe for the selected client
+    client_data = df[df['entity_name'] == selected_client]
+
+    if not client_data.empty:
+        # Extract the first matching row
+        client_row = client_data.iloc[0]
+        
+        # Client Specific KPIs
+        c1, c2 = st.columns(2)
+        
+        
+        est_wallet = f"R {client_row['Estimated Wallet Size']:,.2f}M"
+        wallet_share = f"{client_row['WALLET SHARE'] * 100:.1f}%"
+        
+        c1.metric(label="Estimated Client Wallet", value=est_wallet)
+        c2.metric(label="Syn Bank Current Share", value=wallet_share)
+    else:
+        st.warning("No financial data found for this client.")
     
     # Bar chart placeholder for product breakdown
     chart_data = pd.DataFrame(
-        np.random.randint(10, 50, size=(4, 2)), 
+        np.random.randint(10, 50, size=(len(products), 2)), 
         columns=['Syn Bank Share', 'Competitor Share'], 
         index=products
     )
@@ -204,6 +279,9 @@ elif view_mode == "Client Drill-Down":
         st.info(ai_notes[selected_client])
     else:
         st.warning("AI briefing generation pending for this client.")
+
+
+
 
 
         
