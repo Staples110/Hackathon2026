@@ -1,0 +1,16 @@
+# Phase 1 - acquisition
+httpx[http2]==0.27.2
+playwright==1.47.0          # after install: python -m playwright install chromium
+selectolax==0.3.21          # fast HTML parsing for the static-page paths
+tenacity==9.0.0             # optional: swap in for the hand-rolled backoff
+
+# Phase 2 - extraction
+pdfplumber==0.11.4          # text + table extraction, layout-aware
+pypdf==5.0.1                # metadata, page counts, damaged-file recovery
+
+# Analysis / QA
+pandas==2.2.3
+
+# Dev
+pytest==8.3.3
+pytest-asyncio==0.24.0

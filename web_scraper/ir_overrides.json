@@ -1,0 +1,438 @@
+
+{
+  "LDZU.F": {
+    "company_name": "Aspen Pharmacare Holdings Limited",
+    "website": "https://www.aspenpharma.com",
+    "ir_urls": [
+      "https://www.aspenpharma.com/financial-results-and-integrated-reporting/",
+      "https://financialfilings.com/companies/aspen-pharmacare-holdings-limited/",
+      "https://www.aspen-reports.co.za/reports/2024/downloads.php"
+    ],
+    "fiscal_year_end_month": 6
+  },
+  "NQL1.F": {
+    "company_name": "The Bidvest Group Limited",
+    "website": "https://www.bidvest.co.za",
+    "ir_urls": [
+      "https://www.bidvest.co.za/investor-relations",
+      "https://www.bidvest.co.za/investment-case-financial-indicators",
+      "https://www.bidvest.co.za/shareholder-information"
+    ],
+    "fiscal_year_end_month": 6
+  },
+
+  "BID": {
+    "input_ticker": "BID",
+    "company_name": "Bid Corporation Limited",
+    "jse_ticker": "BID",
+    "isin": "ZAE000216537",
+    "primary_exchange": "JSE",
+    "website": "https://www.bidcorpgroup.com",
+    "ir_urls": [
+      "https://www.bidcorpgroup.com/investor-overview.php",
+      "https://www.bidcorpgroup.com/archive.php",
+      "https://www.bidcorpgroup.com/shareholder-hub.php"
+    ],
+    "sens_page": "https://www.bidcorpgroup.com/sens.php",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 6,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Carried over from your file; landing pages look right but I did not individually confirm each. NOT the same company as NQL1.F - Bidcorp was unbundled from Bidvest Group in 2016. Both are in this file; do not merge them."
+  },
+  "LDZU.F": {
+    "input_ticker": "LDZU.F",
+    "company_name": "Aspen Pharmacare Holdings Limited",
+    "jse_ticker": "APN",
+    "isin": "ZAE000066692",
+    "primary_exchange": "JSE",
+    "website": "https://www.aspenpharma.com",
+    "ir_urls": [
+      "https://www.aspenpharma.com/financial-results-and-integrated-reporting/",
+      "https://www.aspenpharma.com/investor-relations/",
+      "https://www.aspenpharma.com/download-category/financial-results-and-presentations/"
+    ],
+    "sens_page": "https://www.aspenpharma.com/investor-relations/",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 6,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "MISSING ENTIRELY from your overrides file - the scraper would have skipped it. Frankfurt line of JSE:APN. Reporting page is organised as FY2026/FY2025/.../ARCHIVE tabs, so the harvester's accordion expansion is needed to reach pre-2025 documents."
+  },
+"NQL1.F": {
+    "input_ticker": "NQL1.F",
+    "company_name": "The Bidvest Group Limited",
+    "jse_ticker": "BVT",
+    "isin": "ZAE000117321",
+    "primary_exchange": "JSE",
+    "website": "https://bidvest.co.za",
+    "ir_urls": [
+      "https://bidvest.co.za/investor-relations",
+      "https://bidvest.co.za/financial-results-archive",
+      "https://bidvest.co.za/integrated-annual-report-archive",
+      "https://bidvest.co.za/investor-presentations",
+      "https://www.bidvest-reports.co.za/"
+    ],
+    "sens_page": "https://bidvest.co.za/sens",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 6,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "MISSING ENTIRELY from your overrides file. Distinct from BID (Bid Corporation). Bidvest publishes IAR, AFS and Sustainability separately - a clean test case for your IAR-vs-AFS classifier. Actual PDFs are served from bidvest-reports.co.za, a different host, so keep same_site_only=False or add it as a start URL (already done here)."
+  },
+
+  "MTN": {
+    "input_ticker": "MTN",
+    "company_name": "MTN Group Limited",
+    "jse_ticker": "MTN",
+    "isin": "ZAE000042164",
+    "primary_exchange": "JSE",
+    "website": "https://www.mtn.com",
+    "ir_urls": [
+      "https://www.mtn.com/investors/",
+      "https://www.mtn.com/financial-results/",
+      "https://www.mtn.com/annual-reports/",
+      "https://mtn-investor.com/reporting-suite/"
+    ],
+    "sens_page": "https://www.mtn.com/sens/",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 12,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "Your file had 'mtn-investor.com/mtn-30-years/index.php' (an anniversary microsite) and the bare homepage. Both replaced. MTN separately publishes 'annual financial statements submitted to the JSE for debt listings requirements' under /investors/ - that is your DEBT_PROGRAMME source for this ticker."
+  },
+  "S1VA.F": {
+    "input_ticker": "S1VA.F",
+    "company_name": "Pepkor Holdings Limited",
+    "jse_ticker": "PPH",
+    "isin": "ZAE000259479",
+    "primary_exchange": "JSE",
+    "website": "https://www.pepkor.co.za",
+    "ir_urls": [
+      "https://www.pepkor.co.za/document-library/",
+      "https://www.pepkor.co.za/document-library/results/",
+      "https://pepkor.co.za/latest-results/",
+      "https://www.pepkor.co.za/investor-relations/sens/"
+    ],
+    "sens_page": "https://www.pepkor.co.za/investor-relations/sens/",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 9,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "Your file pointed at 'thevault.exchange/start-profile-steps/?groupkey=...' - that is an account-signup flow, and the crawler would have wandered into a registration form. Also dropped '/financial-services/', which is a business-segment page, not IR. FYE 30 September is unusual: a Pepkor document labelled 2024 covers Oct 2023 - Sep 2024."
+  },
+  "5VD.F": {
+    "input_ticker": "5VD.F",
+    "company_name": "Vodacom Group Limited",
+    "jse_ticker": "VOD",
+    "isin": "ZAE000132577",
+    "primary_exchange": "JSE",
+    "website": "https://www.vodacom.com",
+    "ir_urls": [
+      "https://www.vodacom.com/integrated-reports.php",
+      "https://www.vodacom.com/financial-results-and-presentations.php",
+      "https://www.vodacom.com/annual-results.php",
+      "https://www.vodacom.com/presentations.php",
+      "https://vodacom-reports.co.za/"
+    ],
+    "sens_page": "https://www.vodacom.com/sens.php",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 3,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "Your file had '/financial-services.php' (M-Pesa business segment) and '/public-policy-reports.php'. Both replaced. /integrated-reports.php is year-tabbed 2011-2026 and separates 'Integrated report' from 'Consolidated financial statements' - the single best IAR-vs-AFS test case in this list. PDFs are hosted on vodacom-reports.co.za."
+  },
+  "CLCGY": {
+    "input_ticker": "CLCGY",
+    "company_name": "Clicks Group Limited",
+    "jse_ticker": "CLS",
+    "isin": "ZAE000134854",
+    "primary_exchange": "JSE",
+    "website": "https://www.clicksgroup.co.za",
+    "ir_urls": [
+      "https://www.clicksgroup.co.za/investors/",
+      "https://www.clicksgroup.co.za/results/",
+      "https://www.clicksgroup.co.za/download-reports/"
+    ],
+    "sens_page": "https://www.clicksgroup.co.za/sens/",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 8,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Replaced the year-locked '/iar2025/download-reports/' microsite path with the stable '/download-reports/' - the 2025-scoped one cannot reach 2023-24. CLCGY is the US OTC ADR code, not a JSE code. FYE 31 August confirmed from the FY2024 results announcement."
+  },
+  "RMQ0.F": {
+    "input_ticker": "RMQ0.F",
+    "company_name": "OUTsurance Group Limited",
+    "jse_ticker": "OUT",
+    "isin": "ZAE000154298",
+    "primary_exchange": "JSE",
+    "website": "https://group.outsurance.co.za",
+    "ir_urls": [
+      "https://group.outsurance.co.za/results-and-reports/",
+      "https://group.outsurance.co.za/shareholders-information/"
+    ],
+    "sens_page": "https://group.outsurance.co.za/sens-announcements/",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 6,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Dropped the bare homepage from your list. Renamed from Rand Merchant Investment Holdings (RMI) in 2022 - hence the 'RMQ0' Frankfurt code - so pre-2023 documents are branded RMI. As an insurer its primary statements are IFRS 17-shaped: insurance revenue and insurance service expense, not 'Revenue' and 'Cost of sales'. Most of your LABEL_FAMILIES will miss."
+  },
+
+  "NPN": {
+    "input_ticker": "NPN",
+    "company_name": "Naspers Limited",
+    "jse_ticker": "NPN",
+    "isin": "ZAE000015889",
+    "primary_exchange": "JSE",
+    "website": "https://www.naspers.com",
+    "ir_urls": [
+      "https://www.naspers.com/investors/results-reports-events/results-reports-and-events-archive",
+      "https://www.naspers.com/investors/results-reports-events",
+      "https://www.naspers.com/investors/results-reports-events/latest-financial-results",
+      "https://www.naspers.com/investors/investing-in-naspers/bonds"
+    ],
+    "sens_page": "https://www.naspers.com/investors/results-reports-events/regulatory-news",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 3,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "Your file listed a terminal PDF ('fy2026-results-presentation.pdf') as an ir_url. The harvester crawls pages for links; handing it a PDF yields exactly one document and no archive. Replaced with the archive index. The /bonds page is the DEBT_PROGRAMME source. Naspers and Prosus (PRX.AS) consolidate the same underlying assets - do not sum them."
+  },
+
+  "_schema": {
+    "version": "2.0",
+    "generated": "2026-08-12",
+    "note": "Keyed by the identifier as it appears in tickers.txt so the scraper matches without renaming. jse_ticker is the code you should actually key any JSE-side join on. confidence: 1.0 = URL seen in a verified source this session; 0.7 = plausible landing page, structure not individually confirmed; 0.0 = not scrapeable, see notes.",
+    "fields": {
+      "input_ticker": "as supplied in tickers.txt",
+      "jse_ticker": "JSE share code, or null if not JSE-listed",
+      "isin": "ISIN where confirmed, else null",
+      "primary_exchange": "where the primary listing sits - determines which regulator holds the authoritative filings",
+      "ir_urls": "crawl ENTRY POINTS (landing/index pages). Never terminal PDFs - the harvester needs pages with links on them.",
+      "sens_page": "company-hosted SENS/regulatory-news page, the best free per-company SENS source",
+      "sec_edgar": "for SEC registrants: 20-F/6-K filings, free, documented API. Far more reliable than scraping the IR site.",
+      "fiscal_year_end_month": "month number of financial year end - REQUIRED for any calendar-period join",
+      "confidence": "0.0-1.0, see note above",
+      "scrapeable": "false means do not point the crawler at this entry"
+    }
+  },
+
+  "BHP": {
+    "input_ticker": "BHP",
+    "company_name": "BHP Group Limited",
+    "jse_ticker": "BHG",
+    "isin": "AU000000BHP4",
+    "primary_exchange": "ASX",
+    "website": "https://www.bhp.com",
+    "ir_urls": [
+      "https://www.bhp.com/investor-hub/reports-and-presentations",
+      "https://www.bhp.com/investor-hub/reports-and-presentations/financial-results-operational-reviews",
+      "https://www.bhp.com/investor-hub/reports-and-presentations/annual-report",
+      "https://www.bhp.com/investors/annual-reporting/past-reports"
+    ],
+    "sens_page": null,
+    "sec_edgar": {
+      "registrant": "BHP Group Limited",
+      "form_types": ["20-F", "6-K"],
+      "cik": null,
+      "resolve_via": "https://www.sec.gov/files/company_tickers.json"
+    },
+    "fiscal_year_end_month": 12,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "Was empty in your file. /investors/* paths redirect to /investor-hub/*. Year-indexed result pages exist at /investors/financial-results-operational-reviews/{YEAR}-financial-results-and-operational-reviews. JSE listing (BHG) is secondary and does NOT generate a full SA reporting suite - reports are ASX/SEC-shaped, reported in USD, not ZAR. Your parser's scale detection will not fire on 'R million' here."
+  },
+
+  "HY7A.F": {
+    "input_ticker": "HY7A.F",
+    "company_name": "Shoprite Holdings Limited",
+    "jse_ticker": "SHP",
+    "isin": "ZAE000012084",
+    "primary_exchange": "JSE",
+    "website": "https://www.shopriteholdings.co.za",
+    "ir_urls": [
+      "https://www.shopriteholdings.co.za/shareholders-investors.html",
+      "https://www.shopriteholdings.co.za/results-and-reports.html"
+    ],
+    "sens_page": "https://www.shopriteholdings.co.za/shareholders-investors/sens-announcements.html",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 6,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Dropped the two '#results-tab' / '#report' fragment URLs from your file - they are the same document as the base page and only inflate the crawl. Shoprite FYE is the Sunday nearest 30 June, so period length varies (52 vs 53 weeks); do not assume equal-length years when computing growth."
+  },
+
+  "GFI": {
+    "input_ticker": "GFI",
+    "company_name": "Gold Fields Limited",
+    "jse_ticker": "GFI",
+    "isin": "ZAE000018123",
+    "primary_exchange": "JSE",
+    "website": "https://www.goldfields.com",
+    "ir_urls": [
+      "https://www.goldfields.com/financial-reports.php",
+      "https://www.goldfields.com/annual-reports.php",
+      "https://www.goldfields.com/results-presentations.php"
+    ],
+    "sens_page": "https://www.goldfields.com/sens.php",
+    "sec_edgar": {
+      "registrant": "Gold Fields Limited",
+      "form_types": ["20-F", "6-K"],
+      "cik": null,
+      "resolve_via": "https://www.sec.gov/files/company_tickers.json"
+    },
+    "fiscal_year_end_month": 12,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Removed 'financialfilings.com' from your list - third-party aggregator, not a primary source, and its terms are not obviously compatible with bulk scraping. Also removed the year-locked '2025-annual-report-suite.php': it goes stale every year and misses 2023-24. Gold Fields is an SEC registrant - the 20-F is the highest-quality single artifact for this company and EDGAR is a free documented API, unlike everything else in this file."
+  },
+
+
+  "VAL": {
+    "input_ticker": "VAL",
+    "company_name": "Valterra Platinum Limited",
+    "jse_ticker": "VAL",
+    "isin": "ZAE000013181",
+    "primary_exchange": "JSE",
+    "website": "https://www.valterraplatinum.com",
+    "ir_urls": [
+      "https://www.valterraplatinum.com/investor-centre/company-results-reports-presentations/",
+      "https://www.valterraplatinum.com/investor-centre/"
+    ],
+    "sens_page": "https://www.valterraplatinum.com/investor-centre/sens-announcements/",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 12,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Renamed from Anglo American Platinum (JSE:AMS) in 2025 after the Anglo American demerger. Documents for FY2023-24 are branded 'Anglo American Platinum', not 'Valterra' - your filename convention will file them under VAL while their contents say Amplats. Add 'Anglo American Platinum' as a name alias before extraction, and expect the 2025 accounts to include demerger restatements that break year-on-year comparability."
+  },
+
+  "AU": {
+    "input_ticker": "AU",
+    "company_name": "AngloGold Ashanti plc",
+    "jse_ticker": "ANG",
+    "isin": "GB00BRXH2664",
+    "primary_exchange": "NYSE",
+    "website": "https://www.anglogoldashanti.com",
+    "ir_urls": [
+      "https://www.anglogoldashanti.com/investors/",
+      "https://www.anglogoldashanti.com/investors/reporting/annual-reports/2023/",
+      "https://www.anglogoldashanti.com/investors/reporting/annual-reports/2024/",
+      "https://www.anglogoldashanti.com/investors/reporting/annual-reports/2025/",
+      "https://reports.anglogoldashanti.com"
+    ],
+    "sens_page": "https://www.anglogoldashanti.com/investors/",
+    "sec_edgar": {
+      "registrant": "AngloGold Ashanti plc",
+      "form_types": ["20-F", "6-K"],
+      "cik": "1973832",
+      "cik_predecessor": "1067428",
+      "note": "CIK 1973832 confirmed from an SEC filing URL this session; 1067428 is the pre-2023 AngloGold Ashanti Limited registrant. Filings before the 2023 UK redomicile sit under the old CIK."
+    },
+    "fiscal_year_end_month": 12,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "Your file had an ESG hub and a malformed path containing '/./'. Replaced with the year-indexed annual-report archive, which is the cleanest structure of any company here - you can enumerate {2023,2024,2025} directly instead of crawling. Corporate structure changed in 2023 (AngloGold Ashanti Limited -> plc, UK-domiciled, primary NYSE); 2023 accounts restate 2021-22. The 20-F is the authoritative artifact."
+  },
+
+  "GLEN.L": {
+    "input_ticker": "GLEN.L",
+    "company_name": "Glencore plc",
+    "jse_ticker": "GLN",
+    "isin": "JE00B4T3BW64",
+    "primary_exchange": "LSE",
+    "website": "https://www.glencore.com",
+    "ir_urls": [
+      "https://www.glencore.com/investors",
+      "https://www.glencore.com/investors/reports-results",
+      "https://www.glencore.com/investors/shareholder-centre"
+    ],
+    "sens_page": null,
+    "sec_edgar": null,
+    "fiscal_year_end_month": 12,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Dropped '/corporate-calendar' from your list - it is an events page with no documents. JSE listing is secondary; reports are UK-shaped, in USD, and there is no SA reporting suite. Glencore's debt disclosures are in the Annual Report, not a separate JSE DMTN programme memorandum, so DocType.DEBT_PROGRAMME will legitimately return nothing here."
+  },
+
+  "NGL0.F": {
+    "input_ticker": "NGL0.F",
+    "company_name": "Anglo American plc",
+    "jse_ticker": "AGL",
+    "isin": "GB00B1XZS820",
+    "primary_exchange": "LSE",
+    "website": "https://www.angloamerican.com",
+    "ir_urls": [
+      "https://www.angloamerican.com/investors",
+      "https://www.angloamerican.com/investors/results-centre-and-presentations",
+      "https://www.angloamerican.com/investors/annual-reporting"
+    ],
+    "sens_page": null,
+    "sec_edgar": null,
+    "fiscal_year_end_month": 12,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Dropped the sustainability/reporting-data URL from your list; it yields ESG documents, not financials. USD reporting, LSE primary. The 2024-25 accounts are heavily restated by the De Beers / Valterra / Amplats demerger programme - segment continuity across 2023-2025 is broken and no amount of parsing fixes that."
+  },
+
+  "SHC": {
+    "input_ticker": "SHC",
+    "company_name": "Shaftesbury Capital PLC",
+    "jse_ticker": "SHC",
+    "isin": "GB00BFYK8Q45",
+    "primary_exchange": "LSE",
+    "website": "https://www.shaftesburycapital.com",
+    "ir_urls": [
+      "https://www.shaftesburycapital.com/en/investors/results-reports-presentations.html",
+      "https://www.shaftesburycapital.com/en/investors.html"
+    ],
+    "sens_page": null,
+    "sec_edgar": null,
+    "fiscal_year_end_month": 12,
+    "confidence": 1.0,
+    "scrapeable": true,
+    "notes": "Was empty in your file. The results URL is confirmed - it appears inside Shaftesbury's own SENS announcement text on senspdf.jse.co.za. LSE primary, JSE and A2X secondary; formerly Capital & Counties Properties plc, merged with Shaftesbury PLC in 2023. GBP reporting. As a REIT its statements carry investment-property revaluation lines your LABEL_FAMILIES do not cover."
+  },
+
+  "PRX.AS": {
+    "input_ticker": "PRX.AS",
+    "company_name": "Prosus N.V.",
+    "jse_ticker": "PRX",
+    "isin": "NL0013654783",
+    "primary_exchange": "Euronext Amsterdam",
+    "website": "https://www.prosus.com",
+    "ir_urls": [
+      "https://www.prosus.com/investors/results-reports-events/results-reports-and-events-archive",
+      "https://www.prosus.com/investors/results-reports-events",
+      "https://www.prosus.com/investors"
+    ],
+    "sens_page": "https://www.prosus.com/investors/results-reports-events/regulatory-news",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 3,
+    "confidence": 0.7,
+    "scrapeable": true,
+    "notes": "Dropped '/net-asset-value' and '/ceo-letters-to-shareholders' from your list - neither hosts financial statements. Prosus and Naspers share one IR platform with mirrored URL structures, so the paths above parallel the NPN entry. Reports in USD, not ZAR. JSE listing is secondary/inward."
+  },
+
+  "0A3.F": {
+    "input_ticker": "0A3.F",
+    "company_name": "NEPI Rockcastle N.V.",
+    "jse_ticker": "NRP",
+    "isin": "NL0015000RT3",
+    "primary_exchange": "Euronext Amsterdam",
+    "website": "https://nepirockcastle.com",
+    "ir_urls": [
+      "https://nepirockcastle.com/investors/",
+      "https://nepirockcastle.com/financial-results/",
+      "https://nepirockcastle.com/reports/"
+    ],
+    "sens_page": "https://nepirockcastle.com/sens/",
+    "sec_edgar": null,
+    "fiscal_year_end_month": 12,
+    "confidence": 0.6,
+    "scrapeable": true,
+    "notes": "Your file listed two terminal PDFs and the bare homepage - one document each, no archive. Replaced with landing-page guesses that I could not individually confirm; verify these three before trusting a run. Dual-listed JSE (primary) and Euronext Amsterdam. Reports in EUR. Property REIT, so same LABEL_FAMILIES gap as SHC."
+  }
+}

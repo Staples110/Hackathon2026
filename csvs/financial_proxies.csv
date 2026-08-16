@@ -1,0 +1,2 @@
+,ticker,entity_name,fiscal_year_end,reporting_currency,statement_type,source_file,revenue_zar,cost_of_revenue_zar,gross_profit_zar,inventories_zar,revenue_domestic_zar,revenue_international_zar,total_borrowings_zar,finance_charges_zar,extraction_confidence
+0,BVT,The Bidvest Group,2024-06-30,ZAR,consolidated,BVT_FY2024_Bidvest_Group_AFSPDF.pdf,122615986000,87739492000,34876494000,14894387000,97234304000,31471636000,31805322000,2506296000,0.98

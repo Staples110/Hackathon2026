@@ -1,0 +1,21 @@
+client_name,sector,bank_transactional_zar,bank_cross_border_zar,bank_trade_finance_zar,total_bank_captured_zar,estimated_total_wallet_zar,share_of_wallet_pct,wallet_gap_zar,opportunity_rank,priority_status,entity_id,wallet_estimation_method
+BHP Group,mining,16167704513.181831,6370829097.71,3949315477.88,26487849088.77183,NA,NA,NA,NA,Insufficient Data,E01,No financial_ledger file supplied — fill in manually
+Glencore,mining,4484998785.036816,7141019550.61,3139504738.02,14765523073.666817,NA,NA,NA,NA,Insufficient Data,E02,No financial_ledger file supplied — fill in manually
+Anglo American,mining,11048797207.561094,4093650102.7,2339380305.92,17481827616.18109,NA,NA,NA,NA,Insufficient Data,E03,No financial_ledger file supplied — fill in manually
+AngloGold Ashanti,mining,1927523010.3153534,2606495588.33,1412733137.97,5946751736.615354,NA,NA,NA,NA,Insufficient Data,E04,No financial_ledger file supplied — fill in manually
+Gold Fields,mining,1654277058.7122383,2833945038.12,1682337241.73,6170559338.562239,NA,NA,NA,NA,Insufficient Data,E05,No financial_ledger file supplied — fill in manually
+Valterra Platinum,mining,40576606.606773995,569921281.97,339517651.72,950015540.296774,NA,NA,NA,NA,Insufficient Data,E06,No financial_ledger file supplied — fill in manually
+OUTsurance Group,insurance,266003055.75,2387713001.88,204402312.05,2858118369.6800003,NA,NA,NA,NA,Insufficient Data,E07,No financial_ledger file supplied — fill in manually
+Sanlam,insurance,32480692755.63,8371058859.08,580026756.05,41431778370.76,NA,NA,NA,NA,Insufficient Data,E08,No financial_ledger file supplied — fill in manually
+Shoprite Holdings,consumer,11317764854.21,10157508949.31,4288354770.59,25763628574.109997,NA,NA,NA,NA,Insufficient Data,E09,No financial_ledger file supplied — fill in manually
+Bid Corporation,consumer,10090567409.89,15373896158.81,5492053555.34,30956517124.039997,NA,NA,NA,NA,Insufficient Data,E10,No financial_ledger file supplied — fill in manually
+Pepkor Holdings,consumer,37665561673.38,20071754303.81,4539648198.61,62276964175.8,NA,NA,NA,NA,Insufficient Data,E11,No financial_ledger file supplied — fill in manually
+Clicks Group,consumer,208779125,3045314009.04,235816669.44,3489909803.48,NA,NA,NA,NA,Insufficient Data,E12,No financial_ledger file supplied — fill in manually
+NEPI Rockcastle,real_estate,31093298.13,715935751.06,7760656.94,754789706.13,NA,NA,NA,NA,Insufficient Data,E13,No financial_ledger file supplied — fill in manually
+Prosus,tech,2182549878.76,6009250964.71,100849449.29,8292650292.76,NA,NA,NA,NA,Insufficient Data,E14,No financial_ledger file supplied — fill in manually
+Naspers,tech,1515492232.36,5993913591.46,132369990.46,7641775814.28,NA,NA,NA,NA,Insufficient Data,E15,No financial_ledger file supplied — fill in manually
+MTN Group,telecoms,11532126899.76,19388122286.18,4410325357.01,35330574542.950005,NA,NA,NA,NA,Insufficient Data,E16,No financial_ledger file supplied — fill in manually
+Vodacom Group,telecoms,264448899.76,9046561288.94,519368489.38,9830378678.08,NA,NA,NA,NA,Insufficient Data,E17,No financial_ledger file supplied — fill in manually
+The Bidvest Group,industrials_pharma,4669916946.92,4998339481.44,3781543739.42,13449800167.78,NA,NA,NA,NA,Insufficient Data,E18,No financial_ledger file supplied — fill in manually
+Aspen Pharmacare,industrials_pharma,3404519972.22,4231397480.51,1300237015.91,8936154468.64,NA,NA,NA,NA,Insufficient Data,E19,No financial_ledger file supplied — fill in manually
+Shaftesbury Capital plc,real_estate,14347724.97,340069200.08,20761209.66,375178134.71000004,NA,NA,NA,NA,Insufficient Data,E20,No financial_ledger file supplied — fill in manually

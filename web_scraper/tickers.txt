@@ -1,0 +1,27 @@
+# JSE report scraper - active tickers
+# Every ticker here has an entry in ir_sources.json.
+# Removed: 0P0001O5OS (Morningstar fund ID, not a listed company - no IR page exists)
+# Removed: 538 commented counterparty names - see SOURCES.md
+
+# --- JSE primary listing (full SA reporting suite: IAR + AFS + SENS) ---
+LDZU.F      # Aspen Pharmacare        JSE:APN   FYE Jun
+NQL1.F      # Bidvest Group           JSE:BVT   FYE Jun
+BID         # Bid Corporation         JSE:BID   FYE Jun
+HY7A.F      # Shoprite Holdings       JSE:SHP   FYE Jun
+RMQ0.F      # OUTsurance Group        JSE:OUT   FYE Jun
+S1VA.F      # Pepkor Holdings         JSE:PPH   FYE Sep
+CLCGY       # Clicks Group            JSE:CLS   FYE Aug
+5VD.F       # Vodacom Group           JSE:VOD   FYE Mar
+NPN         # Naspers                 JSE:NPN   FYE Mar
+MTN         # MTN Group               JSE:MTN   FYE Dec
+GFI         # Gold Fields             JSE:GFI   FYE Dec  (also SEC 20-F)
+VAL         # Valterra Platinum       JSE:VAL   FYE Dec  (was Anglo American Platinum)
+
+# --- JSE secondary/inward listing (foreign-shaped reports, non-ZAR) ---
+AU          # AngloGold Ashanti plc   JSE:ANG   FYE Dec  USD  NYSE primary, SEC 20-F
+BHP         # BHP Group               JSE:BHG   FYE Jun  USD  ASX primary, SEC 20-F
+GLEN.L      # Glencore plc            JSE:GLN   FYE Dec  USD  LSE primary
+NGL0.F      # Anglo American plc      JSE:AGL   FYE Dec  USD  LSE primary
+SHC         # Shaftesbury Capital     JSE:SHC   FYE Dec  GBP  LSE primary, REIT
+PRX.AS      # Prosus N.V.             JSE:PRX   FYE Mar  USD  Euronext primary
+0A3.F       # NEPI Rockcastle N.V.    JSE:NRP   FYE Dec  EUR  REIT

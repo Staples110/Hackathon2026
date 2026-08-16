@@ -1,0 +1,775 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>page not found | Bidvest Group</title>
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <!-              Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLGT756');</script>
+<!-- End Google Tag Manager LF 2 Feb 2023-->
+
+
+
+<meta charset="utf-8">
+<meta name="description" content="We're an international services, trading and distribution company, listed on the JSE, South Africa and operating on four continents. We employ 137 000 people worldwide, but our roots remain South African.">
+<meta http-equiv="Keywords" content="bidvest, website, Services, Freight, Office and Print, Automotive, Financial Services, Commercial Products, Electrical, Namibia, Properties, Brian Joffe, Lorato Phalatse, Douglas Denoon Balharrie Band, Eric Kevin Diack, Alexander Komape Maditsi, Sibongile (Bongi) Masinga, Nigel George Payne, Tania Slabbert, Lindsay Peter Ralphs, Nompumelelo (Mpumi) Themekile Madisa, Hans Peter Meijer, Gillian Claire Mcmahon, Anthony William Dawe,">
+<meta name="copyright" content="Bastion">
+<meta name="author" content="Bidvest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0,width=device-width">
+
+<meta name="format-detection" content="telephone=no">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /> 
+	
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css?v19.7.9" rel="stylesheet" type="text/css" />
+<link  href="css/linear-full.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css?v29.840" rel="stylesheet" type="text/css" />
+<link href="css/style.css?v29.8.0" rel="stylesheet" type="text/css" />
+<link href="css/animate.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<script src="scripts/tabs.js"></script>
+<script src="js/jquery-2.1.3.js"></script>    
+<script src="js/modernizr-custom.js"></script>
+<script src="js/animate.js"></script>
+<script src="scripts/jssor.slider.min.js"></script>
+<script src="scripts/jssor-options.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/jquery-3.6.0.min.js"></script>
+
+<script>
+$(function(){
+"use strict";
+// WRAP TABLES IN SCROLLABLE DIV, FOR MOBILE
+    $('table').wrap('<div class="scrollable"></div>');
+    $('table.unwrap').unwrap();
+    // DISPLAY SWIPE ICON 
+    // before scroll
+    $('.scrollable').on('scroll', function(){
+        var scrollHorizontal = $(this).scrollLeft();
+        if (scrollHorizontal > 0) {
+        $(this).addClass('scrolledR');
+        }
+    });
+    });
+</script>
+
+
+
+
+
+
+		
+
+
+
+<style>
+    .menu-tools-container {
+    display: flex;
+}
+    .menu-tools-container .menu-tool-item {
+    background-color: #141549;
+    color: #FFF;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    flex: 1;
+    text-decoration: none;
+    font-size: 14px;
+    border-right: 1px solid #FFF;
+    transition: 0.6s ease-in-out;
+}
+
+.menu-tools-container .menu-tool-item:hover{background:#4A99D1}
+
+.menu-tools-container .menu-tool-item img {
+    position: relative;
+    padding-right: 10px;
+}
+
+.rpt-slectr{
+    position: relative;
+    top: 0px;
+}
+
+.logo-bx{padding: 8px 0px 15px 0;}
+.reduce-svg-image img{
+    width: 35px;
+}
+</style>
+
+<div class="nav-bar-spacer-block">
+	<div class="container">
+		
+
+    <div class="rpt-slectr">
+    <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+		<div class="col-lg-9">
+            <div class="menu-tools-container ">
+            <a href = "https://www.linkedin.com/company/bidvestgroup" target = "_blank" class="menu-tool-item reduce-svg-image"><img src = "images/icons/social-media-linkedin.svg" alt = "Search Icon"/></a>
+
+			 <a href = "pdf/code-ethics/2025/bidvest-code-of-ethics.pdf" target = "_blank" class="menu-tool-item"><img src = "images/icons/tools-icons/brochure-icon.png" alt = "Search Icon"/>Ethics hotline</a>
+			 <a href = "pdf/home/product-brochure/bidvest-product-and-services.pdf" target = "_blank" class="menu-tool-item"><img src = "images/icons/tools-icons/brochure-icon.png" alt = "Page Icon"/>Products and services  </a>
+			 <a href = "bee-certificate"  class="menu-tool-item"><img src = "images/icons/tools-icons/bee-icon.png" alt = "Page Icon"/>BEE certificate</a>
+             <a href = "https://thevault.exchange/start-profile-steps/?groupkey=MTQ4" target = "_blank" class="menu-tool-item"><img src = "images/icons/tools-icons/vault-icon-green.png" alt = "Vault Icon"/>Vault register for alerts</a>
+                
+               
+            </div>
+        </div>
+        </div>
+
+    </div>
+       
+
+
+        <div class="logo-bx">
+            <div class="row">
+                <div class="col-lg-12">
+            
+            
+            <div class="logo-main" id="logo">
+                <a href="index" title="Home">
+                    <!--<img src="images/bidvest_color-01.svg" alt="Logo">-->
+                </a>
+                
+            </div>
+                </div>
+            
+            </div>
+
+        </div>
+    
+
+	
+	</div>
+</div>	
+	
+
+
+
+
+<!--  page navigation menu -->
+
+<div class="nav-menu-bar-bg ">
+
+	<div class="container">
+
+		<div class="logo-scrolled"><a href="index" title="Home"><img src="images/bidvest-color-blu.svg"
+					alt="Logo" /></a></div>
+
+		<div class="row">
+
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light pb-0">
+					<button class="navbar-toggler  nav-bar-mobile" type="button" data-toggle="collapse"
+						data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item  ">
+								<a class="nav-link " href="index">
+									<div><i class="icon-home switch-lblue hme-i"></i>
+										<!--<img src="images/icons/home-icon.png" class="menu-bar-box-icons home-icon-img" alt="Home">-->
+									</div>
+								</a>
+							</li>
+
+
+
+							<li class="nav-item ">
+
+								<a class="nav-link  nav-link dropdown-toggle nav-link-mobile" id="navbarDropdown1"
+									role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+									href="javascript:void();">
+									<div>About Us</div>
+								</a>
+								<a class="nav-link  nav-link nav-link-desktop" href="about">
+									<div class="txt-dv">About Us</div>
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+									<div class="navbarDropdownholder">
+
+										<div class="row">
+
+											<div class="col-lg-3">
+												<a class="dropdown-item" href="about"><strong>Overview</strong> </a>
+												<a class="dropdown-item" href="history">History</a>
+											</div>
+
+											<div class="col-lg-3">
+												<p class="no-marginB  adjust-nav-header"><strong>Directorate</strong>
+												</p>
+												<a class="dropdown-item" href="executive-directors">Executive
+													Directors</a>
+												<a class="dropdown-item"
+													href="non-executive-directors">Non-Executive Directors</a>
+												<a class="dropdown-item" href="board-members">Committee
+													Memberships</a>
+												<a class="dropdown-item" href="executive-committee">Executive
+													Committee</a>
+
+											</div>
+
+										</div>
+
+
+									</div>
+								</div>
+							</li>
+
+
+
+
+
+							<li class="nav-item ">
+
+								<a class="nav-link  nav-link dropdown-toggle nav-link-mobile" id="navbarDropdown2"
+									role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+									href="javascript:void();">
+									<div>Divisions</div>
+								</a>
+								<a class="nav-link  nav-link nav-link-desktop" href="javascript:void();">
+									<div>Divisions</div>
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+									<div class="navbarDropdownholder">
+
+										<div class="row">
+
+											<div class="col-lg-3">
+
+												<a class="dropdown-item"
+													href="divisional-information"><strong>Divisions</strong> </a>
+												<a class="dropdown-item"
+													href="bidvest-services-south-africa">Bidvest Services South
+													Africa </a>
+												<a class="dropdown-item"
+													href="bidvest-services-international">Bidvest Services
+													International </a>
+												<a class="dropdown-item" href="bidvest-industrial-freight">Bidvest
+													Freight </a>
+
+
+											</div>
+
+											<div class="col-lg-3">
+
+												<!-- <a class="dropdown-item"
+													href="bidvest-industrial-financial-services.php">Bidvest Financial
+													Services </a> -->
+												<a class="dropdown-item"
+													href="bidvest-industrial-office-print">Bidvest Branded Products
+												</a>
+												<a class="dropdown-item"
+													href="bidvest-industrial-commercial-products">Bidvest Commercial
+													Products </a>
+												<a class="dropdown-item"
+													href="bidvest-industrial-automotive">Bidvest Automotive</a>
+
+
+											</div>
+
+
+										</div>
+
+
+
+
+
+
+
+
+
+
+									</div>
+								</div>
+							</li>
+
+							<li class="nav-item ">
+								<a class="nav-link  nav-link dropdown-toggle nav-link-mobile" id="navbarDropdown3"
+									role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+									href="javascript:void();">
+									<div>Sustainability</div>
+								</a>
+								<a class="nav-link  nav-link nav-link-desktop" href="sustainability-overview">
+									<div>Sustainability</div>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+
+									<div class="navbarDropdownholder">
+										<div class="row">
+
+											<div class="col-lg-3">
+												<a class="dropdown-item"
+													href="sustainability-overview"><strong>Overview</strong> </a>
+												<a class="dropdown-item"
+													href="sustainability-transformation">Sustainability
+													Transformation </a>
+												<a class="dropdown-item" href="functional-governance">Functional
+													Governance </a>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+							</li>
+
+
+
+
+
+							<li class="nav-item ">
+								<a class="nav-link  nav-link dropdown-toggle nav-link-mobile" id="navbarDropdown4"
+									role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+									href="javascript:void();">
+									<div>Investors</div>
+								</a>
+								<a class="nav-link  nav-link dropdown-toggle nav-link-desktop"
+									href="investor-relations">
+									<div>Investors</div>
+								</a>
+
+								<div class="dropdown-menu navbarDropdown4sub" aria-labelledby="navbarDropdown4">
+									<div class="navbarDropdownholder">
+										<div class="row">
+
+											<div class="col-lg-3">
+												<a class="dropdown-item"
+													href="investor-relations"><strong>Overview</strong></a>
+												<a class="dropdown-item"
+													href="investment-case-financial-indicators">Financial
+													indicators</a>
+												<a class="dropdown-item" href="shareholder-information">Shareholder
+													Information</a>
+												<a class="dropdown-item" href="investor-calendar">Investor
+													Calendar</a>
+												<a class="dropdown-item" href="sens-releases">SENS Releases</a>
+												<a class="dropdown-item" href="investor-relations-contacts">Investor
+													Relations Contacts</a>
+											</div>
+
+
+											<div class="col-lg-3">
+												<p class="no-marginB adjust-nav-header"><strong>Investor Centre</strong>
+												</p>
+												<a class="dropdown-item" href="investor-presentations">Investor
+													Presentations</a>
+												<a class="dropdown-item" href="financial-results-archive">Financial
+													Results</a>
+												<a class="dropdown-item"
+													href="integrated-annual-report-archive">Integrated Annual
+													Reports</a>
+												<a class="dropdown-item" href="dmtn-cp">Bidvestco Debt
+													Instruments</a>
+											</div>
+
+
+
+										</div>
+									</div>
+								</div>
+							</li>
+
+
+
+
+
+
+							<li class="nav-item ">
+								<a class="nav-link  nav-link dropdown-toggle nav-link-mobile" id="navbarDropdown5"
+									role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+									href="javascript:void();">
+									<div>Policies and Notices</div>
+								</a>
+								<a class="nav-link  nav-link dropdown-toggle nav-link-desktop"
+									href="access-to-information">
+									<div>Policies and Notices</div>
+								</a>
+
+								<div class="dropdown-menu navbarDropdown5sub" aria-labelledby="navbarDropdown5">
+									<div class="navbarDropdownholder">
+										<div class="row">
+
+											<div class="col-lg-3">
+												<a class="dropdown-item" href="access-to-information">Access to
+													Information</a>
+												<a class="dropdown-item" href="data-protection">Data Protection</a>
+												<a class="dropdown-item" href="group-governance">Group
+													Governance</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<style>
+								.search-icon {
+									position: relative;
+								}
+
+								.search-icon:before {
+									content: '\eac4';
+									font-size: 25px;
+									color: #fff;
+									position: absolute;
+									font-family: 'icomoon';
+									left: -12px;
+									top: -6px;
+								}
+
+								@media screen  and (max-width:991px){
+									.search-icon:before {
+									left: 41%;
+									top: -8px;
+								}
+								}
+
+								@media screen  and (max-width:520px){
+									.search-icon:before {
+									left: 32%;
+									top: -8px;
+								}
+								}
+							</style>
+
+
+							<li class="nav-item   ">
+								<a class="nav-link " href="press-news">
+									<div>Media and Internal News</div>
+								</a>
+							</li>
+
+
+
+							<li class="nav-item  ">
+								<a class="nav-link " href="contact-us">
+									<div>Contact Us</div>
+								</a>
+							</li>
+							<li  class="nav-item  ">
+								<a class="nav-link " href="search_results">
+									<div class="search-icon ml-2">Search</div>
+								</a>
+							</li>
+
+
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>	<style>
+.breadcrumbs p{font-size:13px;margin-top:15px}
+</style>
+
+
+
+<div class="container">
+<div class="breadcrumbs">
+<p class="rgt"><span class = "switch-dblue">Currently viewing: </span>   <span class = "switch-blue">Error 404</span> <span class = "switch-dblue">| View next:</span>  <a class = "switch-lblue" href=".php"></a></p>
+</div>
+<br clear="all" />
+</div>
+	<style>
+		.txt-404 {
+			font-size: 95px;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+		.div-footer-blue{
+			display: none;
+		}
+	</style>
+
+</head>
+
+<body id="Contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="txt-404 home-btn">404</h1>
+		
+				<p class="intro-med text-center mb-2">We can't find the page you're looking for.</p>
+				<p class="text-center">Here are a few links that may be helpful:</p>
+				<a href="index.php" class="d-block text-center">Home</a>
+				<a href="about.php" class="d-block text-center">About Us</a>
+				<a href="sustainability-overview.php" class="d-block text-center">Sustainability</a>
+				<a href="investor-relations.php" class="d-block text-center">Investors</a>
+				<a href="data-protection.php" class="d-block text-center">Policies and Notices</a>
+				<a href="press-news.php" class="d-block text-center">Media and Internal News</a>
+				<a href="contact-us.php" class="d-block text-center">Contact Us</a>
+				<a href="search_results.php" class="d-block text-center  mb-5">Search</a>
+			</div>
+		</div>
+	</div>
+
+	<style>
+/*=PAGINATION
+-------------*/
+main[role="main"] .pagination p {margin-bottom:0}
+.pagination {background:#fff}
+.pagination-links {width:100%; margin:0 auto; max-width:1280px;}
+.pagination-links .lft, .pagination-links .rgt {position:relative;}
+.pagination-links .lft {max-width:50%;}
+.pagination-links .lft div#arrow-left, .pagination-links .rgt div#arrow-right {position:absolute;font-size:2em;margin-top:0em;color:#141549;}
+.pagination-links .lft div#arrow-left {float:left;left:0em; top: 12px;font-size: 32px;}
+.pagination-links .rgt div#arrow-right {float:right;right:0em; top: 12px;font-size: 32px;}
+.pagination-links .lft div#arrow-left:after {content:'\e943';font-family:'icomoon';speak: none; }
+
+.pagination-links .rgt div#arrow-right:after {content:'\e944';font-family:'icomoon';speak: none;}
+
+.pagination-links .rgt {text-align:right}
+
+.pagination-links .lft p {float:left;margin-left:2.3em; margin-top:-6px; padding-top:0;margin-top:10px}
+.pagination-links .rgt p {float:right;margin-right:2.3em; margin-top:-6px; padding-top:0;margin-top:10px}
+.pagination-links i {background:none;font-style:normal;display:block; font-size: 16px; color: #4A99D1;margin:0}
+
+.pagination-links b {color:#141549; font-family: 'Raleway', Roboto, Arial, Helvetica, sans-serif;font-size:20px;font-weight: 400; transition: 0.6s ease-in-out;}
+
+.pagination-links .lft:hover b, .pagination-links .lft:hover i, .pagination-links .rgt:hover b, .pagination-links .rgt:hover i {font-weight: 400;padding-right: 5px; padding-left: 5px;transition: 0.6s ease-in-out;}
+
+.pagination-links .lft b:before {content: ''; position: absolute; top: 35px; left: 2px; width: 0; border-bottom: 2px solid #141549;-webkit-transition:all 0.5s ease;-moz-transition:all 1s ease;-ms-transition:all 0.5s ease;-o-transition:all 1s ease;transition:all 0.5s ease;}
+.pagination-links .rgt b:before {content: ''; position: absolute; top: 35px; right: 2px; width: 0; border-bottom: 2px solid #141549;-webkit-transition:all 0.5s ease;-moz-transition:all 1s ease;-ms-transition:all 0.5s ease;-o-transition:all 1s ease;transition:all 0.5s ease;}
+
+.pagination-links .lft:hover b:before{width:92%}
+.pagination-links .rgt:hover b:before{width:92%}
+
+.pagination-links em {display:none}
+
+.pagination-links i {margin-top: 0em;}
+.pagination-links p {padding-bottom:0em }
+
+@media screen and (max-width: 1290px) {
+
+.pagination-links .lft div#arrow-left {left: 5px;}
+.pagination-links .rgt div#arrow-right {right: 5px;}
+
+
+.pagination-links .lft b:before {left: 6px;}
+.pagination-links .rgt b:before {right: 6px;}
+
+
+}
+
+
+@media screen and (max-width: 640px) {
+.pagination-links b { display:none;}
+.pagination-links i { margin-top: 0.5em;}
+.pagination-links .lft div#arrow-left, .pagination-links .rgt div#arrow-right {font-size: 1.5em;}
+.pagination-links .lft div#arrow-left {top: 15px;}
+.pagination-links .rgt div#arrow-right {top: 15px;}
+
+
+}
+
+
+
+
+</style>
+
+
+<div class="div-footer-blue">
+<section class="next-prev">
+   <!-- Footer -->
+<br class="clear-lft">
+<div class="pagination-links group" style=" width:auto; max-width: 1280px;  padding-bottom:0; ">
+<div class="lft" style="cursor:pointer;" onclick="location.href=''">
+<a rel="prev" href="" title="">
+<div id="arrow-left"></div>
+<p><i>Back</i><em>:&nbsp;</em><b></b></p>
+</a>
+</div><!--/.lft-->
+<div class="rgt" style="cursor:pointer;" onclick="location.href=''">
+<a rel="prev" href="" title="">
+<div id="arrow-right"></div>
+<p><i>Next</i><em>:&nbsp;</em><b></b></p>
+</a></div><!--/.lft-->
+<div style="clear: both"></div>
+</div><!--/.pagination-links-->
+</section>
+</div>	
+
+  <div class="scroll left-ani">
+  	<div class="scroll-btn">
+  		<span class="icon-arrow-up"></span>
+  	</div>
+  </div>
+  <div class="point left-ani">
+  	<svg class="round" viewbox="0 0 100 100" width="60" height="60" data-percent="100">
+  		<circle cx="50" cy="50" r="42" />
+  	</svg>
+  </div>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="footer-content-container">
+            <div class="row text-center no-gutters">
+                <div class="col-lg-12 text-center">
+                    <span class="footer-content">&copy; Bidvest 2026. All rights reserved</span>
+                    <a href="disclaimer" class="footer-content">Disclaimer</a>
+                    <a href="sitemap" class="footer-content">Site Map</a>
+                    <a href="contact-us" class="footer-content">Contact us</a>
+                    
+                </div>
+				
+				<div class="col-lg-12 text-center">
+					 <div class="footerwebsite-bastion"><a href="https://www.bastiongroup.co.za/" target = "_blank" class="footer-content">Developed by Bastion</a></div>
+				</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    $('ul.buttons li,ul.home-buttons > li,ul.buttons2 > li,ul.accordion > li,ul.list-investor-results > li,ul.home-buttons-border > li').bind('touchend click', function() {
+
+        var url = $('a', this).prop('href');
+        var target = $('a', this).prop('target');
+        if (url) {
+            // # open in new window if "_blank" used
+            if (target == '_blank') {
+                window.open(url, target);
+            } else {
+                window.location = url;
+            }
+        }
+    });
+</script>	
+<script>
+
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+		
+		 $(".nav-menu-bar-bg").addClass("toolbar-wrapper-fixed");
+
+         
+		
+		    	
+    }
+	else
+		{
+			$(".nav-menu-bar-bg").removeClass("toolbar-wrapper-fixed");
+
+           
+		}
+
+        if (scroll >= 200){
+            $(".txt-dv").css("color", "#141549");
+        }
+        else{
+
+            $(".txt-blue-whit").removeClass("txt-blue-whit-rmv");
+          
+        }
+		
+		
+});
+
+
+
+	
+
+	</script>
+
+<script>
+	
+	
+	
+	
+	function popTop(){
+			
+        if(document.documentElement.scrollTop >= 10){
+            $('.left-ani').css({"transform": "translateX(0)"});
+			
+        }
+        else{
+            $('.left-ani').css({"transform": "translateX(130px)"});
+        }
+    }
+		
+		function gotop(){
+        $('.scroll-btn').click(function(){
+            $("body,html").animate({scrollTop:0},600);
+        });
+    }
+	
+		
+
+	
+	
+
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+ 
+		
+		
+		
+		 var wScroll = $(this).scrollTop();
+
+    popTop();
+    
+    var secHeight = document.body.offsetHeight - 1150;
+    console.log(secHeight);
+    var $round = $('.round');
+    $progress = (wScroll/secHeight) * 251;
+    $round.css('stroke-dasharray', $progress  + ' 9999');
+		
+		
+});
+
+
+	
+	window.onload = function () {
+      init();
+}
+
+
+		$(document).ready(function() {
+			
+			  gotop();
+		
+	
+	
+			
+});
+
+
+</script>
+
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
+</body>
+
+
+</html>
