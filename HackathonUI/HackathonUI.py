@@ -46,7 +46,7 @@ if view_mode == "Overview":
         # Loop through each client present in your dataframe
         for index, row in df.iterrows():
             
-            st.markdown(f"### 🏢 {row['entity_name']} <span style='font-size:14px; color:gray;'>({row['sector'].capitalize()})</span>", unsafe_allow_html=True)
+            st.markdown(f" {row['entity_name']} <span style='font-size:14px; color:gray;'>({row['sector'].capitalize()})</span>", unsafe_allow_html=True)
             
             
             c1, c2, c3 = st.columns(3)
@@ -60,23 +60,39 @@ if view_mode == "Overview":
             c2.metric(label="Captured by Syn Bank", value=captured)
             c3.metric(label="Wallet Gap", value=gap)
            
-
-           
-            client_chart_data = pd.DataFrame({
-                'Metric Type': ['Estimated Wallet', 'Captured Share'],
-                'ZAR (Millions)': [row['Estimated Wallet Size'], row['Amount_captured_by_synbank']]
-            }).set_index('Metric Type')
-            
-            
-            st.bar_chart(client_chart_data)
-
             st.divider()
-        # Opportunity Heatmap
-        st.subheader("Opportunity Heatmap (ZAR Millions)")
-        st.write("Visualizing the revenue gap across clients and product pillars.")
-        st.dataframe(gap_data.style.background_gradient(cmap='YlOrRd'), use_container_width=True)
+
+
+            #heatamp ---
 
         
+        pivot_gap = df.pivot(index='entity_name', columns='top_opportunity_pillar', values='wallet_gap_zar_m')
+        pivot_share = df.pivot(index='entity_name', columns='top_opportunity_pillar', values='WALLET SHARE')
+
+        gap_data = pd.DataFrame({
+            'Investment Banking: Wallet Gap (ZAR m)': pivot_gap.get('Investment Banking'),
+            'Investment Banking: Wallet share(ZAR m)': pivot_share.get('Investment Banking'),
+            'Transactional Banking: Wallet Gap (ZAR m)': pivot_gap.get('Transactional Banking'),
+            'Transactional Banking: Wallet Share (%)': pivot_share.get('Transactional Banking')
+        })
+
+
+
+        gap_data = gap_data.replace(0.0, np.nan)
+
+
+        if 'BHP Group' in gap_data.index:
+            gap_data.loc['BHP Group', 'Transactional Banking: Wallet Gap (ZAR m)'] = 0.0
+
+
+        st.subheader("Opportunity Heatmap (ZAR Millions)")
+        st.write("Visualizing the revenue gap and share across clients and product pillars.")
+
+
+        st.dataframe(
+            gap_data.style.background_gradient(cmap='YlOrRd', axis=None), 
+            use_container_width=True
+        )
 
 
     if view_mode == "Overview":
@@ -169,18 +185,13 @@ if view_mode == "Overview":
 elif view_mode == "Portfolio Summary":
     st.header("Portfolio-Level Summary")
     
-    # High-level KPIs
-    col1, col2, col3 = st.columns(3)
-    col1.metric(label="Estimated Total Wallet (ZAR)", value="R 5.2B", delta="12% YoY Growth")
-    col2.metric(label="Syn Bank Captured Share", value="R 1.1B", delta="-2% vs Competitors", delta_color="inverse")
-    col3.metric(label="Total Addressable Gap", value="R 4.1B", delta="High Priority")
     
     st.divider()
 
   
     for index, row in df.iterrows():
         
-        st.markdown(f"### 🏢 {row['entity_name']} <span style='font-size:14px; color:gray;'>({row['sector'].capitalize()})</span>", unsafe_allow_html=True)
+        st.markdown(f" {row['entity_name']} <span style='font-size:14px; color:gray;'>({row['sector'].capitalize()})</span>", unsafe_allow_html=True)
             
         
         c1, c2, c3 = st.columns(3)
@@ -195,11 +206,37 @@ elif view_mode == "Portfolio Summary":
         c3.metric(label="Wallet Gap", value=gap)
             
         st.divider()
-    
-    # Opportunity Heatmap
+   
+
+     # Heatmap ---
+
+    pivot_gap = df.pivot(index='entity_name', columns='top_opportunity_pillar', values='wallet_gap_zar_m')
+    pivot_share = df.pivot(index='entity_name', columns='top_opportunity_pillar', values='WALLET SHARE')
+
+    gap_data = pd.DataFrame({
+        'Investment Banking: Wallet Gap (ZAR m)': pivot_gap.get('Investment Banking'),
+        'Investment Banking: Wallet share(ZAR m)': pivot_share.get('Investment Banking'),
+        'Transactional Banking: Wallet Gap (ZAR m)': pivot_gap.get('Transactional Banking'),
+        'Transactional Banking: Wallet Share (%)': pivot_share.get('Transactional Banking')
+    })
+
+
+
+    gap_data = gap_data.replace(0.0, np.nan)
+
+
+    if 'BHP Group' in gap_data.index:
+        gap_data.loc['BHP Group', 'Transactional Banking: Wallet Gap (ZAR m)'] = 0.0
+
+
     st.subheader("Opportunity Heatmap (ZAR Millions)")
-    st.write("Visualizing the revenue gap across clients and product pillars.")
-    st.dataframe(gap_data.style.background_gradient(cmap='YlOrRd'), use_container_width=True)
+    st.write("Visualizing the revenue gap and share across clients and product pillars.")
+
+
+    st.dataframe(
+        gap_data.style.background_gradient(cmap='YlOrRd', axis=None), 
+        use_container_width=True
+    )
 
     st.divider()
 
@@ -279,6 +316,8 @@ elif view_mode == "Client Drill-Down & AI Briefing notes":
         st.info(ai_notes[selected_client])
     else:
         st.warning("AI briefing generation pending for this client.")
+
+
 
 
 
